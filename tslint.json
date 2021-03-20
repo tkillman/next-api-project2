@@ -1,0 +1,70 @@
+{
+	"defaultSeverity": "error",
+	"extends": ["tslint:latest", "tslint-config-prettier"],
+	"rules": {
+		"no-implicit-dependencies": [true, ["~"]],
+		"no-empty": false,
+		"max-classes-per-file": false,
+		"class-name": false,
+		"jsdoc-format": false,
+		"no-unused-variable": true,
+		"ordered-imports": false,
+		"object-literal-sort-keys": false,
+		"member-ordering": false,
+		"object-literal-key-quotes": [false, "as-needed"],
+		"semicolon": [true, "always", "ignore-bound-class-methods"],
+		"strict-type-predicates": false,
+		"trailing-comma": false,
+		"no-consecutive-blank-lines": true,
+		"indent": [true, "tabs", 2],
+		"quotemark": [true, "single", "jsx-single", "avoid-escape"],
+		"max-line-length": false,
+		"no-console": false,
+		"no-object-literal-type-assertion": false,
+		"no-submodule-imports": [false, "next"],
+		"space-before-function-paren": false,
+		"ter-indent": [true, "tab", 2],
+		"typedef-whitespace": [
+			true,
+			{
+				"call-signature": "nospace",
+				"index-signature": "nospace",
+				"parameter": "nospace",
+				"property-declaration": "nospace",
+				"variable-declaration": "nospace"
+			},
+			{
+				"call-signature": "space",
+				"index-signature": "space",
+				"parameter": "space",
+				"property-declaration": "space",
+				"variable-declaration": "space"
+			}
+		],
+		"whitespace": [
+			true,
+			"check-branch",
+			"check-decl",
+			"check-operator",
+			"check-module",
+			"check-preblock",
+			"check-rest-spread",
+			"check-separator",
+			"check-type",
+			"check-typecast",
+			"check-type-operator",
+			"check-preblock"
+		]
+	},
+	"linterOptions": {
+		"exclude": [
+			"bin",
+			"tsconfig.json",
+			"*.js",
+			"*.scss",
+			"*.css",
+			"**/__tests__/**/*",
+			"*.md"
+		]
+	}
+}

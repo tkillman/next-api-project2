@@ -1,0 +1,42 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"module": "commonjs",
+		"lib": ["dom", "es6", "es2017", "esnext.asynciterable"],
+		"sourceMap": true,
+		"outDir": "./dist",
+		"moduleResolution": "node",
+		"declaration": false,
+		"composite": false,
+		"removeComments": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+
+		// export default 한 모듈에 대해서 쓸 수 있게 함(import * as express from 'express' => import Express from 'express')
+		"allowSyntheticDefaultImports": true,
+
+		// import React, { PureComponent } from 'react' 처럼 한줄로 쓸 수 있게 함
+		"esModuleInterop": true,
+
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"skipLibCheck": true,
+		"baseUrl": "./",
+		"rootDir": "./src",
+		"paths": {
+			"~/src/*": ["./src/*"],
+			"~/entity/*": ["./src/graphql/entity/*"],
+			"~/types/*": ["./src/@types/*"],
+			"~/graphql/*": ["./src/graphql/*"],
+			"~/utils/*": ["src/utils/*"]
+		}
+	},
+	"exclude": ["node_modules", ".vscode"],
+	"include": ["./src/**/*"]
+}
