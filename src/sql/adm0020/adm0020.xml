@@ -4,8 +4,7 @@
   <select id="adm0020GetOrderList" resultMap="HashMap">
     <![CDATA[
       /*webadmin-adm0020 adm0020GetOrderList*/
-      select ID
-            , PASSWD
+      select PASSWD
             , NAME
             , EMAIL
             , PHONE

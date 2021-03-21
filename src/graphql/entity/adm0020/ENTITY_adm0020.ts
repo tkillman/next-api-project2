@@ -6,9 +6,6 @@ import ENTITY_RESULT_OUT from '~/entity/common/ENTITY_RESULT_OUT';
 export class ENTITY_adm0020 {
 	// 리스트
 	@Field({nullable: true})
-	public ID: string;	
-
-	@Field({nullable: true})
 	public PASSWD: string;	
 
 	@Field({nullable: true})

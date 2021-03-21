@@ -9,7 +9,7 @@ export default class adm0020Resolver {
 		description: '영업일보 오더 조회'
 	})
 	public async adm0020GetOrderList(
-		@Arg('NAME') NAME: string
+		@Arg('NAME', { nullable: true }) NAME: string = ''
 	): Promise<ENTITY_adm0020_RESULT> {
 		let result: ENTITY_adm0020_RESULT;
 
